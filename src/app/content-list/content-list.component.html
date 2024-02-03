@@ -1,0 +1,16 @@
+<!-- <p>content-list works!</p> -->
+
+<!-- <app-content-card *ngFor="let contentItem of ContentItems.slice(0, 5); index as i" [content]="contentItem"></app-content-card> -->
+<!-- <div *ngFor="let contentItem of ContentItems; index as i">
+    <app-content-card *ngIf="i < 5" [content]="contentItem"></app-content-card>
+    <!=- <p>{{contentItem.creator}}</p> -->
+  <!-- </div>    
+  
+   --> 
+   <div>
+    <h2>Content List:</h2>
+    <div *ngFor="let contentItem of ContentItems.slice(0, 5)">
+      <app-content-card [contentItem]="contentItem"></app-content-card>
+    </div>
+  </div>
+  

@@ -1,10 +1,7 @@
-<p>content-card works!</p>
-
+<!-- <p>content-card works!</p> -->
 <div>
-    <h2>Content List:</h2>
-
-<div *ngFor="let data of firstInstance.cgArray; let i= index">
-<div [innerHTML]="firstInstance.HTMLoutput(i)" ></div>
-<!-- sanitizeHtml -->
+  <h2> Title: {{ contentItem?.title }}</h2>
+  <p>Description: {{ contentItem?.description }}</p>
+  <p>Creator: {{ contentItem?.creator }}</p>
 </div>
-  </div>
+
