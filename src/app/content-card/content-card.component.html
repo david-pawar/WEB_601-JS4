@@ -1,7 +1,8 @@
 <!-- <p>content-card works!</p> -->
-<div>
-  <h2> Title: {{ contentItem?.title }}</h2>
-  <p>Description: {{ contentItem?.description }}</p>
-  <p>Creator: {{ contentItem?.creator }}</p>
+<div [ngClass]="{'border-2 border-solid border-black mb-3': isFirst}">
+  <h2 class="content-card-tag"> Title: {{ contentItem?.title }}</h2>
+  <p class="content-card-tag">Description: {{ contentItem?.description }}</p>
+  <p class="content-card-tag ">Creator: {{ contentItem?.creator }}</p>
+  <img class="imgs" [src]="contentItem?.imgURL" alt="{{ contentItem?.title }}" (click)="logContentItem(contentItem)">
 </div>
 

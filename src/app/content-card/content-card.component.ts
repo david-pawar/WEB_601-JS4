@@ -14,10 +14,16 @@ import {ContentListComponent} from '../content-list/content-list.component'
 export class ContentCardComponent implements OnInit{
 
   @Input() contentItem: Content | undefined;
+  @Input() isFirst: boolean | undefined;
 constructor(){
 
 }
 ngOnInit() {
 
+}
+logContentItem(contentItem: Content | undefined){
+if(contentItem) {
+  console.log(`Id: ${contentItem.id} and Title: ${contentItem.title}`)
+}
 }
   }
